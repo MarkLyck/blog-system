@@ -5,7 +5,8 @@ const User = Backbone.Model.extend({
   defaults: {
     signUpDate: new Date()
   },
-  urlRoot: userAPI
+  urlRoot: userAPI,
+  idAttribute: '_id'
 })
 
 export default User

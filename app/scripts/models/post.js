@@ -5,7 +5,8 @@ const Post = Backbone.Model.extend({
   defaults: {
     timeStamp: new Date()
   },
-  urlRoot: blogAPI
+  urlRoot: blogAPI,
+  idAttribute: '_id'
 })
 
 export default Post

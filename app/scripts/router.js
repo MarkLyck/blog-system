@@ -6,6 +6,7 @@ import renderLogin from './views/login'
 import renderPosts from './views/allPosts'
 import renderNewPost from './views/newPost'
 import renderSinglePost from './views/singlePost'
+import bookmarks from './views/bookmarks'
 
 let $container = $('.container')
 
@@ -15,7 +16,8 @@ const Router = Backbone.Router.extend({
     signup        : 'signUpView',
     'posts'       : 'blogsView',
     'posts/new'   : 'newPostView',
-    'posts/:id'   : 'singlePostView'
+    'posts/:id'   : 'singlePostView',
+    'bookmarks'   : 'bookmarksView'
   },
   loginView: function() {
     console.log('RENDER LOGIN')
@@ -43,7 +45,13 @@ const Router = Backbone.Router.extend({
   singlePostView: function(id) {
     console.log('SINGLE POST');
     let $singlePost = renderSinglePost(id)
-    $container.empty().append($singlePost)
+    $('#single-post-container').empty().append($singlePost)
+    // $container.empty().append($singlePost)
+  },
+  bookmarksView: function() {
+    console.log('RENDERING BOOKMARKS');
+    let $bookmarks = bookmarks()
+    $container.empty().append($bookmarks)
   }
 })
 

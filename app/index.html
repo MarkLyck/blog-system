@@ -9,6 +9,7 @@
 		<nav>
 			<button class="nav-btn all-posts" type="button" name="button">All Posts</button>
 			<button class="nav-btn new-post" type="button" name="button">New Post</button>
+			<button class="nav-btn bookmark" type="button" name="button">Bookmarks</button>
 		</nav>
 		<div class="container">
 			<!-- <div class="modal-container">
@@ -53,6 +54,24 @@
 				</div>
 				<p id="post-body">BODY</p>
 			</div> -->
+
+			<div class="bookmarks-container">
+				<button id="sort-by-url" type="button" name="button">URLS</button>
+				<button id="sort-by-tag" type="button" name="button">TAGS</button>
+
+				<ul id="bookmarksList"></ul>
+
+				<button id="new-bookmark" type="button" name="button">New Bookmark</button>
+			</div>
+
+			<div class="modal-container">
+	      <div class="bookmark-modal modal">
+	        <input id="bm-title-input" type="text" name="name" placeholder="Title">
+	        <input id="bm-url-input" type="text" name="name" placeholder="URL">
+	        <input id="bm-tags-input" type="text" name="name" placeholder="Tags">
+					<button id="create-bookmark" type="button" name="button">Create Bookmark</button>
+	      </div>
+	    </div>
 
 		</div>
 		<script src="main.js" charset="utf-8"></script>
