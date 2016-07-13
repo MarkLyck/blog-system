@@ -415,8 +415,53 @@ textarea {
       padding: 20px; }
     .modal-container .modal button {
       padding: 20px; }
+  .modal-container .login-modal h3 {
+    margin-bottom: 10px; }
   .modal-container .login-modal #signup-btn-nav {
     margin-top: 20px; }
+
+.all-posts-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%; }
+  .all-posts-wrapper .left {
+    width: calc(100%/3);
+    border-right: 5px solid #eee;
+    box-sizing: border-box; }
+    .all-posts-wrapper .left ul {
+      height: 100%; }
+      .all-posts-wrapper .left ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        padding: 10px 20px; }
+        .all-posts-wrapper .left ul li:hover {
+          color: #fff;
+          background: #009cff; }
+  .all-posts-wrapper .right {
+    width: calc((100% / 3) * 2);
+    padding: 50px;
+    box-sizing: border-box; }
+    .all-posts-wrapper .right .post-info {
+      display: flex;
+      justify-content: space-between; }
+
+.new-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .new-post-wrapper #new-post-title {
+    height: 10%;
+    padding: 0 50px; }
+  .new-post-wrapper #new-post-body {
+    height: 80%;
+    padding: 50px; }
+  .new-post-wrapper #new-post-btn {
+    height: 10%; }
+
+.bookmarks-container {
+  display: flex; }
 
 .hidden {
   display: none !important; }
@@ -425,5 +470,30 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+button, input, textarea {
+  outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+nav {
+  height: 10vh;
+  background: #eee;
+  display: flex; }
+  nav button {
+    width: calc(100%/3);
+    height: 100%;
+    border: none;
+    margin: none;
+    background: none; }
+    nav button:hover {
+      color: #fff;
+      background: #009cff; }
+  nav .selected {
+    background: #e1e1e1; }
+
+.container {
+  height: 90vh; }
 
 /*# sourceMappingURL=main.css.map */
